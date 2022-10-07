@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html file</title>
+
+    <style>
+        body {
+            display: grid;
+            place-content: center;
+            min-height: 100vh;
+        }
+    </style>
+<script defer src="main.js"></script></head>
+
+<body>
+    <!-- 
+    <template id="list">
+        <style>
+            .list {
+                max-width: 300px;
+            }
+
+            .list .input-area {
+                display: grid;
+                grid-template-columns: max-content max-content 30px;
+                gap: 1rem;
+                place-items: center;
+            }
+
+            .list .input-area [data-button-add] {
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+            }
+
+            .list-item {
+                display: grid;
+                grid-template-columns: 1fr 30px;
+            }
+
+            .list-item [data-button-remove] {
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+            }
+        </style>
+        <div class="list">
+            <h2 data-title>
+                <slot name="title">
+            </h2>
+            <ul data-list>
+            </ul>
+            <div class="input-area">
+                <span data-button-text>
+                    <slot name="button-title">
+                </span>
+                <input type="text" data-input>
+                <div data-button-add>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="listItem">
+        <div class="list-item">
+            <span data-text>
+            </span>
+            <div data-button-remove>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+            </div>
+        </div>
+    </template> -->
+
+    <todo-list>
+        <div slot="title">Todo listik title</div>
+        <div slot="button-title">Todo listik title</div>
+    </todo-list>
+
+
+</body>
+
+</html>
